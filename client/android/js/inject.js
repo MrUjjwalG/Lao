@@ -6,6 +6,13 @@ document.querySelector("ul.iconf.navbar-nav").ontouchstart = function () { Andro
 document.querySelectorAll("button.navbar-toggler.side_navbar_toggler")[1].onclick = function () { Android.swipeOn(); };
 document.querySelector("div[style='padding: 5px 3px;']").style.overflow = "hidden";
 const ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
+
+const logoutBtn = document.querySelector("#ctl00_lnkSignOut");
+
+if(logoutBtn){
+   logoutBtn.onclick = function () { Android.logOut(); }
+}
+
 if (ulist) {
   ulist.classList.add("ti-link");
   ulist.classList.remove("ti-shopping-cart-full");
