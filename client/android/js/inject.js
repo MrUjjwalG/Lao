@@ -43,5 +43,13 @@ if (window.location.href === "https://www.laoapp.in/" || window.location.href ==
    const alist = document.querySelectorAll("div.items.png");
    for (let i = 0; i < alist.length; i++) {
     alist[i].style.setProperty("height", "auto", "important");
+      let child = alist[i].querySelectorAll("a"); 
+      if (child.length ===3) {
+          child[0].parentNode.style.setProperty("flex-wrap", "unset", "important");
+      for (let c = 0; c < child.length; c++) {
+        child[c].querySelector("img").style.height="80px";
+          child[c].querySelector("img").style.width="120px";
+      }
+    }
    }
 }
