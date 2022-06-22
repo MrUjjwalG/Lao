@@ -1,4 +1,5 @@
 Android.injected();
+document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend","<link rel=\"stylesheet\" href=\"https://raw.githubusercontent.com/MrUjjwalG/Lao/main/client/android/css/master.css\" /><link rel=\"stylesheet\" href=\"https://raw.githubusercontent.com/MrUjjwalG/Lao/main/client/android/css/style.css\" />");
 
 document.querySelector("li[style='background: #0953cc; height: 60px; padding-right:10px']").style.background = "#000";
 document.querySelectorAll("button.navbar-toggler.side_navbar_toggler")[0].onclick = function () { Android.swipeOff(); };
