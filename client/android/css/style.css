@@ -1415,7 +1415,7 @@ button:focus {
     font-weight: 500;
     padding: 10px;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 16px;
     overflow: scroll;
 }
 
@@ -1438,7 +1438,7 @@ button:focus {
 .navbar .navbar-nav .dropdown-item {
     padding: 8px 20px 8px 20px;
     color: #333;
-    font-size: 18px;
+    font-size: 14px;
     text-transform: capitalize
     white-space: initial;
     overflow: scroll;
@@ -2185,12 +2185,10 @@ button:focus {
     margin: 0;
     font-size: 28px;
     color: #fff;
-    transition: all .5s ease 0s;
     border-radius: 0;
     height: 35px;
     width: 35px;
     padding: 0;
-    border: 1px solid #fff;
     line-height: 32px;
     transition: none;
     border-radius: 4px
@@ -2874,7 +2872,8 @@ input.text {
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: space-between;
+    overflow-x:scroll;
 }
 
 .categories_wrap {
