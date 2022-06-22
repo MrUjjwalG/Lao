@@ -46,8 +46,4 @@ if (window.location.href === "https://www.laoapp.in/" || window.location.href ==
         if (c > 2) { child[c].parentNode.removeChild(child[c]); }
       }
     }
-  } const nodeList = document.querySelectorAll("div.items.png");
-  for (let i = 0; i < nodeList.length; i++) {
-    nodeList[i].classList.add("mitems"); nodeList[i].classList.remove("items");
-  };
-}
+  }
