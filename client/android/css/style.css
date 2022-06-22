@@ -70,7 +70,7 @@
 
     .filter_header {
         width: 100%;
-        background: #000000;
+        background: #0953cc;
         padding: 10px;
         margin-top: -7px
     }
@@ -1326,14 +1326,14 @@ button:focus {
 }
 
 .header_wrap {
-    transition: all .5s ease 0s;
+    transition: all .5s ease 0s;    
     width: 100%;
     z-index: 99;
     top: 0
 }
 
     .header_wrap:not([class*=bg_]):not([class*=bg-]) {
-        background-color: #00000
+        background-color: #0953cc
     }
 
         .header_wrap:not([class*=bg_]):not([class*=bg-]).transparent_header {
@@ -1415,8 +1415,7 @@ button:focus {
     font-weight: 500;
     padding: 10px;
     text-transform: capitalize;
-    font-size: 16px;
-    overflow: scroll;
+    font-size: 16px
 }
 
 .light_skin.transparent_header.nav-fixed .navbar .navbar-nav > li:hover > a, .light_skin.transparent_header.nav-fixed .navbar .navbar-nav > li > a.active, .navbar .navbar-nav > li:hover > a, .navbar .navbar-nav > li > a.active, .transparent_header.nav-fixed .light_skin .navbar .navbar-nav > li:hover > a, .transparent_header.nav-fixed .light_skin .navbar .navbar-nav > li > a.active {
@@ -1440,8 +1439,6 @@ button:focus {
     color: #333;
     font-size: 14px;
     text-transform: capitalize
-    white-space: initial;
-    overflow: scroll;
 }
 
     .navbar .navbar-nav .dropdown-item.dropdown-toggler {
@@ -1820,8 +1817,7 @@ button:focus {
 }
 
 .navbar .navbar-nav > li > .nav-link.cart_trigger i {
-    font-size: 20px;
-    overflow: scroll;
+    font-size: 20px
 }
 
 .cart_list li {
@@ -2185,6 +2181,7 @@ button:focus {
     margin: 0;
     font-size: 28px;
     color: #fff;
+    transition: all .5s ease 0s;
     border-radius: 0;
     height: 35px;
     width: 35px;
@@ -2872,8 +2869,7 @@ input.text {
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: justify;
-    justify-content: space-between;
-    overflow-x:scroll;
+    justify-content: space-between
 }
 
 .categories_wrap {
@@ -8702,6 +8698,7 @@ body.switch-open {
         text-decoration: none;
         margin-bottom: 20px;
         margin: 5px 5px;
+        height: 180px
     }
 
         .items > a > img {
@@ -8721,6 +8718,7 @@ body.switch-open {
         margin-bottom: 20px;
         margin: 5px 5px;
         background: #f8f8f8;
+        height: 180px
     }
 
         .items.png > a > img {
@@ -8734,8 +8732,7 @@ body.switch-open {
         margin: 3px 0 0;
         padding: 0;
         font-size: 16px;
-        font-weight: 500;
-        word-break: break-all;
+        font-weight: 500
     }
 
     .items > a > .off {
