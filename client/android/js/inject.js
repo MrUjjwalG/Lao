@@ -50,7 +50,6 @@ if (window.location.href === "https://www.laoapp.in/" || window.location.href ==
           child[0].parentNode.style.setProperty("flex-wrap", "unset", "important");
       for (let c = 0; c < child.length; c++) {
           child[c].style.setProperty("height", "unset", "important");
-          child[c].style.setProperty("background", "#ffffff", "important");
           child[c].querySelector("img").style.height="100px";
           child[c].querySelector("img").style.width="120px";
       }
