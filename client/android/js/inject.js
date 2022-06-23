@@ -1,6 +1,6 @@
 Android.injected();
-document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend","<link rel=\"stylesheet\" href=\"https://raw.githubusercontent.com/MrUjjwalG/Lao/main/client/android/css/master.css\" />");
-
+var notification = JSON.stringify({ id : 2, startDate: "2022-06-24T01:00:00Z", endDate: "2022-06-25T01:00:00Z",count: 0, url: "https://www.laoapp.in/", image: "https://laocpanel.laobp.in/Content/banner_image/skdto0sp.xkvokayabanner.png", title: "Power Meets Speed", message: "" });
+Android.addNotification(notification);
 document.querySelector("li[style='background: #0953cc; height: 60px; padding-right:10px']").style.background = "#000";
 document.querySelectorAll("button.navbar-toggler.side_navbar_toggler")[0].onclick = function () { Android.swipeOff(); };
 document.querySelector("ul.iconf.navbar-nav").ontouchstart = function () { Android.swipeOff(); };
@@ -45,7 +45,7 @@ if (window.location.href === "https://www.laoapp.in/" || window.location.href ==
   const alist = document.querySelectorAll("div.items.png");
     for (let i = 0; i < alist.length; i++) {
       alist[i].style.setProperty("height", "auto", "important");
-      let child = alist[i].querySelectorAll("a"); 
+      let child = alist[i].querySelectorAll("a");
       if (child.length ===3) {
           child[0].parentNode.style.setProperty("flex-wrap", "unset", "important");
       for (let c = 0; c < child.length; c++) {
