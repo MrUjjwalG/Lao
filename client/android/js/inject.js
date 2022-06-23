@@ -43,15 +43,15 @@ if (window.location.href === "https://www.laoapp.in/" || window.location.href ==
   const blist = document.querySelectorAll(".background_bg.carousel-item");
   for (let i = 0; i < blist.length; i++) { blist[i].style.height = "125px"; }
    const alist = document.querySelectorAll("div.items.png");
-   for (let i = 0; i < alist.length; i++) {
-    alist[i].style.setProperty("height", "auto", "important");
-      let child = alist[i].querySelectorAll("a"); 
+    for (let i = 0; i < alist.length; i++) {
+    let child = alist[i].querySelectorAll("a"); 
       if (child.length ===3) {
           child[0].parentNode.style.setProperty("flex-wrap", "unset", "important");
       for (let c = 0; c < child.length; c++) {
-        child[c].querySelector("img").style.height="90px";
+          clild[c].style.setProperty("height", "unset", "important");
+          child[c].querySelector("img").style.height="100px";
           child[c].querySelector("img").style.width="120px";
       }
     }
-   }
+  }
 }
