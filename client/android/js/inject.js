@@ -44,7 +44,8 @@ if (window.location.href === "https://www.laoapp.in/" || window.location.href ==
   for (let i = 0; i < blist.length; i++) { blist[i].style.height = "125px"; }
   const alist = document.querySelectorAll("div.items.png");
     for (let i = 0; i < alist.length; i++) {
-    let child = alist[i].querySelectorAll("a"); 
+      alist[i].style.setProperty("height", "auto", "important");
+      let child = alist[i].querySelectorAll("a"); 
       if (child.length ===3) {
           child[0].parentNode.style.setProperty("flex-wrap", "unset", "important");
       for (let c = 0; c < child.length; c++) {
