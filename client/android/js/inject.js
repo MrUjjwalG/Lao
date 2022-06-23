@@ -4,6 +4,8 @@ document.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend","<link r
 document.querySelector("li[style='background: #0953cc; height: 60px; padding-right:10px']").style.background = "#000";
 document.querySelectorAll("button.navbar-toggler.side_navbar_toggler")[0].onclick = function () { Android.swipeOff(); };
 document.querySelector("ul.iconf.navbar-nav").ontouchstart = function () { Android.swipeOff(); };
+document.querySelector("div.owl-stage").ontouchstart = function () { Android.swipeOff(); };
+document.querySelector("div.owl-stage").ontouchend = function () { Android.swipeOn(); };
 document.querySelectorAll("button.navbar-toggler.side_navbar_toggler")[1].onclick = function () { Android.swipeOn(); };
 document.querySelector("div[style='padding: 5px 3px;']").style.overflow = "hidden";
 const ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
