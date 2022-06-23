@@ -42,12 +42,14 @@ if (window.location.href === "https://www.laoapp.in/" || window.location.href ==
   document.querySelector("div.prod.row").appendChild(document.querySelectorAll("div.col-md-6")[5]);
   const blist = document.querySelectorAll(".background_bg.carousel-item");
   for (let i = 0; i < blist.length; i++) { blist[i].style.height = "125px"; }
-   const alist = document.querySelectorAll("div.items.png");
+  const alist = document.querySelectorAll("div.items.png");
     for (let i = 0; i < alist.length; i++) {
     let child = alist[i].querySelectorAll("a"); 
       if (child.length ===3) {
           child[0].parentNode.style.setProperty("flex-wrap", "unset", "important");
       for (let c = 0; c < child.length; c++) {
+          child[c].style.setProperty("height", "unset", "important");
+          child[c].style.setProperty("background", "#ffffff", "important");
           child[c].querySelector("img").style.height="100px";
           child[c].querySelector("img").style.width="120px";
       }
