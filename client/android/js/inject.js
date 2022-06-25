@@ -1,11 +1,6 @@
 var notification = JSON.stringify({ id : 2, startDate: "2022-06-24T01:00:00Z", endDate: "2022-07-05T00:00:00Z",count: 0, url: "https://www.laoapp.in/", image: "https://laocpanel.laobp.in/Content/banner_image/awpju1z2.xolcdfscdfshbdvfkj.png", title: "Shop your desires", message: "Shop your desires from 5th of July 2022" });
 Android.addNotification(notification);
 document.querySelector("li[style='background: #0953cc; height: 60px; padding-right:10px']").style.background = "#000";
-document.querySelectorAll("button.navbar-toggler.side_navbar_toggler")[0].onclick = function () { Android.swipeOff(); };
-document.querySelector("ul.iconf.navbar-nav").ontouchstart = function () { Android.swipeOff(); };
-document.querySelector("div.owl-stage").ontouchstart = function () { Android.swipeOff(); };
-document.querySelector("div.owl-stage").ontouchend = function () { Android.swipeOn(); };
-document.querySelectorAll("button.navbar-toggler.side_navbar_toggler")[1].onclick = function () { Android.swipeOn(); };
 document.querySelector("div[style='padding: 5px 3px;']").style.overflow = "hidden";
 const ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
 
@@ -55,3 +50,4 @@ if (window.location.href === "https://www.laoapp.in/" || window.location.href ==
     }
   }
 }
+Android.swipeOff();
