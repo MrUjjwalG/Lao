@@ -50,4 +50,3 @@ if (window.location.href === "https://www.laoapp.in/" || window.location.href ==
     }
   }
 }
-Android.swipeOff();
