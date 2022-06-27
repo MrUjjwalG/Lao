@@ -1826,8 +1826,8 @@ button:focus {
 
 .cart_count, .wishlist_count {
     position: relative;
-    top: -8px;
-    left: 8px;
+    top: -10px;
+    left: -10px;
     font-size: 11px;
     background-color: #e40000;
     border-radius: 50px;
@@ -1839,8 +1839,8 @@ button:focus {
     padding: 0 5px;
     display: inline-block;
     vertical-align: top;
-    margin-left: -5px;
-    margin-right: -5px
+    margin-left: 0px;
+    margin-right: -20px
 }
 .cart_trigger .amount {
     margin-left: 8px;
