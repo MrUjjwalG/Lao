@@ -1,8 +1,10 @@
 var notification = JSON.stringify({ id : 2, startDate: "2022-06-24T01:00:00Z", endDate: "2022-07-05T00:00:00Z",count: 0, url: "https://www.laoapp.in/", image: "https://laocpanel.laobp.in/Content/banner_image/awpju1z2.xolcdfscdfshbdvfkj.png", title: "Shop your desires", message: "Shop your desires from 5th of July 2022" });
 Android.addNotification(notification);
+try{
 document.querySelector("li[style='background: #0953cc; height: 60px; padding-right:10px']").style.background = "#000";
 document.querySelector("div[style='padding: 5px 3px;']").style.overflow = "hidden";
 document.querySelector(".cat_slider1").style.setProperty("margin-top", "10px", "important");
+}catch{}
 const ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
 
 const logoutBtn = document.querySelector("#ctl00_lnkSignOut");
