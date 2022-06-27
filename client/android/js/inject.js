@@ -60,3 +60,10 @@ else if (window.location.href === "https://www.laoapp.in/privacepolicey.aspx") {
         lis[i].style.setProperty("margin-left", "unset", "important");
     }
 }
+else if (window.location.href === "https://www.laoapp.in/privacepolicey.aspx") {
+   var imgsc = document.querySelectorAll(".card-body .text-center");
+    for (let i = 0; i < imgsc.length; i++) {
+       imgsc[i].style.setProperty("width", "50%", "important");
+       imgsc[i].style.setProperty("padding", "25px", "important");
+    }
+}
