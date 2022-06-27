@@ -35,7 +35,7 @@ else if (window.location.href.includes("my_account.aspx")) {
 if (window.location.href === "https://www.laoapp.in/" || window.location.href === "https://www.laoapp.in/Default.aspx") {
   document.querySelector("div.prod.row").appendChild(document.querySelectorAll("div.col-md-6")[5]);
   const blist = document.querySelectorAll(".background_bg.carousel-item");
-  for (let i = 0; i < blist.length; i++) { blist[i].style.height = "125px"; }
+  for (let i = 0; i < blist.length; i++) { blist[i].style.height = "125px"; blist[i].style.setProperty("background-size", "100%", "important");}
   const alist = document.querySelectorAll("div.items.png");
     for (let i = 0; i < alist.length; i++) {
       alist[i].style.setProperty("height", "auto", "important");
