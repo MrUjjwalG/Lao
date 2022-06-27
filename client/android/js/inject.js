@@ -35,7 +35,7 @@ else if (window.location.href.includes("my_account.aspx")) {
 if (window.location.href === "https://www.laoapp.in/" || window.location.href === "https://www.laoapp.in/Default.aspx") {
   document.querySelector("div.prod.row").appendChild(document.querySelectorAll("div.col-md-6")[5]);
   const blist = document.querySelectorAll(".background_bg.carousel-item");
- for (let i = 0; i < blist.length; i++) {
+   for (let i = 0; i < blist.length; i++) {
       var after = document.createElement('div');
       after.style.setProperty("background-image", getComputedStyle(blist[i])["background-image"]);
       after.style.setProperty("background-position", "center");
@@ -45,7 +45,7 @@ if (window.location.href === "https://www.laoapp.in/" || window.location.href ==
       after.style.setProperty("background-repeat", "no-repeat");
       after.style.setProperty("width", "100%");
       after.style.setProperty("background-size", "100%");
-      after.style.setProperty("height", "125px");
+      after.style.setProperty("height", "100%");
       
       var before = document.createElement('div');
       before.style.setProperty("background-image", getComputedStyle(blist[i])["background-image"]);
@@ -53,9 +53,10 @@ if (window.location.href === "https://www.laoapp.in/" || window.location.href ==
       before.style.setProperty("filter", "blur(1.5px)");
       before.style.setProperty("width", "100%");
       before.style.setProperty("background-size", "100%");
-      before.style.setProperty("height", "125px");
+      before.style.setProperty("height", "100%");
      
       blist[i].style.setProperty("height", "125px");
+      blist[i].style.setProperty("background", "#ffffff");
       blist[i].appendChild(before);
       blist[i].appendChild(after);
   }
