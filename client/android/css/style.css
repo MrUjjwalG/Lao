@@ -1466,7 +1466,10 @@ button:focus {
         padding: 15px 10px;
         position: relative;
         white-space: nowrap;
-        color: #fff
+        color: #fff;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
 .navbar .attr-nav li.nav-btn {
@@ -1826,7 +1829,7 @@ button:focus {
 
 .cart_count, .wishlist_count {
     position: relative;
-    top: -3px;
+    top: -8px;
     left: 8px;
     font-size: 11px;
     background-color: #e40000;
