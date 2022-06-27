@@ -289,10 +289,6 @@ button:focus {
 .navbar-nav .dropdown-menu.cart_box.show::after{
 
 }
-
-.sticky .inpt {
-    margin-top: 4px;
-}
     .btn-fill-out::after, .btn-fill-out::before {
         content: "";
         position: absolute;
