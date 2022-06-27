@@ -8698,7 +8698,6 @@ body.switch-open {
         text-decoration: none;
         margin-bottom: 20px;
         margin: 5px 5px;
-        height: 180px
     }
 
         .items > a > img {
@@ -8718,7 +8717,6 @@ body.switch-open {
         margin-bottom: 20px;
         margin: 5px 5px;
         background: #f8f8f8;
-        height: 180px;
         border-radius: 5%;
     }
 
