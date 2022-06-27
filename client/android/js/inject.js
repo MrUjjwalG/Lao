@@ -2,6 +2,7 @@ var notification = JSON.stringify({ id : 2, startDate: "2022-06-24T01:00:00Z", e
 Android.addNotification(notification);
 document.querySelector("li[style='background: #0953cc; height: 60px; padding-right:10px']").style.background = "#000";
 document.querySelector("div[style='padding: 5px 3px;']").style.overflow = "hidden";
+document.querySelector(".cat_slider1").style.setProperty("margin-top", "10px", "important");
 const ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
 
 const logoutBtn = document.querySelector("#ctl00_lnkSignOut");
