@@ -8709,7 +8709,7 @@ body.switch-open {
         }
 
     .items.png > a {
-        padding: 10px 15px;
+        padding: 10px 10px 15px;
         box-sizing: border-box;
         width: 45.5%;
         text-align: center;
