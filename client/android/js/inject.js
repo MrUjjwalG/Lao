@@ -50,3 +50,13 @@ if (window.location.href === "https://www.laoapp.in/" || window.location.href ==
     }
   }
 }
+else if (window.location.href === "https://www.laoapp.in/privacepolicey.aspx") {
+   var uls = document.querySelectorAll("ul");
+   var lis = document.querySelectorAll("li");
+    for (let i = 0; i < uls.length; i++) {
+        uls[i].style.setProperty("margin-left", "unset", "important");
+    }
+   for (let i = 0; i < lis.length; i++) {
+        lis[i].style.setProperty("margin-left", "unset", "important");
+    }
+}
