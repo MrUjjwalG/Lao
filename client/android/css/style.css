@@ -1467,9 +1467,6 @@ button:focus {
         position: relative;
         white-space: nowrap;
         color: #fff;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
     }
 
 .navbar .attr-nav li.nav-btn {
