@@ -1845,6 +1845,12 @@ button:focus {
     margin-left: 0px;
     margin-right: -20px
 }
+
+.wishlist_count {
+    position: relative;
+    top: -3px;
+    left: 8px;
+}
 .cart_trigger .amount {
     margin-left: 8px;
     font-weight: 600;
