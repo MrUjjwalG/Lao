@@ -67,13 +67,14 @@ const alist = document.querySelectorAll("div.items.png");
     for (let i = 0; i < alist.length; i++) {
       alist[i].style.setProperty("height", "auto", "important");
       let child = alist[i].querySelectorAll("a");
-      if (child.length ===3) {
-           alist[i].style.setProperty("overflow", "scroll", "important");
+      if (child.length % 2 != 0) {
+           alist[i].style.setProperty("overflow-x", "scroll", "important");
       for (let c = 0; c < child.length; c++) {
           child[c].parentNode.style.setProperty("flex-wrap", "unset", "important");
           child[c].parentNode.style.setProperty("justify-content", "unset", "important");
-          child[c].querySelector("img").style.height="100px";
-          child[c].querySelector("img").style.width="120px";
+          child[c].querySelector("img").style.height="75%";
+          child[c].querySelector("img").style.width="75%";
+          child[c].querySelector("img").style.setProperty("object-fit", "cover", "important");
           child[c].querySelector("img").style.setProperty("max-width", "unset", "important");
       }
     }
