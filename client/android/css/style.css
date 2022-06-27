@@ -2279,7 +2279,8 @@ header.light_skin.nav-fixed .social_icons li a {
         color: #333;
         letter-spacing: 1px
     }.hidden-sm-down{display:none}
-    .nn{max-width:800px!important}
+    .nn{max-width: 98%!important;
+    margin-left: -0.5px;}
     .cat_slider1 {
         display: none !important
     }
@@ -8644,6 +8645,10 @@ body.switch-open {
 @media (min-width:576px) and (max-width:767px) {
     .hidden-lg-down, .hidden-md-down, .hidden-sm-down, .hidden-sm-up, .hidden-unless-lg, .hidden-unless-md, .hidden-unless-xl, .hidden-unless-xs, .hidden-xl-down, .hidden-xs-up {
         display: none !important
+    }
+    .nn{
+    max-width: 100%!important;
+    margin-left: 1px;
     }
 }
 
