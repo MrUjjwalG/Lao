@@ -71,6 +71,7 @@ const alist = document.querySelectorAll("div.items.png");
            alist[i].style.setProperty("overflow", "scroll", "important");
       for (let c = 0; c < child.length; c++) {
           child[c].parentNode.style.setProperty("flex-wrap", "unset", "important");
+          child[c].parentNode.style.setProperty("justify-content", "unset", "important");
           child[c].querySelector("img").style.height="100px";
           child[c].querySelector("img").style.width="120px";
           child[c].querySelector("img").style.setProperty("max-width", "unset", "important");
