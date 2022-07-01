@@ -90,8 +90,7 @@ if (document.body.offsetWidth > 768) {
         "background-image",
         getComputedStyle(blist[i])["background-image"]
       );
-      before.style.setProperty("background-position", "center");
-      before.style.setProperty("background-size", "auto");
+      before.style.setProperty("background-repeat", "no-repeat");
       before.style.setProperty("filter", "blur(2px)");
       before.style.setProperty("width", "100%");
       before.style.setProperty("background-size", "100%");
