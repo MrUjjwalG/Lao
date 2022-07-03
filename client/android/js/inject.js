@@ -72,6 +72,9 @@ if (document.body.offsetWidth > 768) {
     document
       .querySelector("div.col-md-2.offset-10")
       .classList.remove("offset-10");
+  } else if (window.location.href.includes("CheckOut.aspx")) {
+    document.querySelector("#aspnetForm > div.main_body > div.main_content > div.section > div > div > div.col-md-8 > div.order_review.nn > div > div > div.col-sm-9").style.padding="0px 15px";
+    document.querySelector("#aspnetForm > div.main_body > div.main_content > div.section > div > div > div.col-md-8 > div.order_review.nn").style.setProperty("overflow-x", "scroll", "important");
   }
   if (
     window.location.href === "https://www.laoapp.in/" ||
