@@ -11744,7 +11744,8 @@ body.switch-open {
 
     .navbar .navbar-collapse .navbar-nav:not([class*=bg_]):not([class*=bg-]) {
         background-color: #fff;
-        box-shadow: 0 5px 10px rgba(0,0,0,.1)
+        box-shadow: 0 5px 10px rgba(0,0,0,.1);
+        padding-bottom: 5em;
     }
 
      .navbar .navbar-collapse .navbar-nav:not([class*=bg_]):not([class*=bg-])  > li:nth-child(1){
