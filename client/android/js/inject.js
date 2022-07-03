@@ -106,10 +106,11 @@ if (document.body.offsetWidth > 768) {
         getComputedStyle(blist[i])["background-image"]
       );
       before.style.setProperty("filter", "blur(3px)");
-      before.style.setProperty("width", "100%");
+      before.style.setProperty("width", "110%");
       before.style.setProperty("background-size", "cover");
       before.style.setProperty("background-repeat", "no-repeat");
       before.style.setProperty("height", "100%");
+      before.style.setProperty("margin", "0 -10%");
 
       blist[i].style.setProperty("height", "125px");
       blist[i].style.setProperty("background", "#ffffff");
