@@ -46,7 +46,7 @@ if (document.body.offsetWidth > 768) {
   
   const userP = document.querySelector("#aspnetForm > header > div.middle-header.dark_skin > div > div > ul > li:nth-child(3) > div");
   if(userP){
-    userP.style.width="12em";
+    userP.style.width="13em";
   }
 
   if (ulist) {
