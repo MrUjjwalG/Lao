@@ -36,6 +36,11 @@ if (document.body.offsetWidth > 768) {
       Android.logOut();
     };
   }
+  
+  const userP = document.querySelector("#aspnetForm > header > div.middle-header.dark_skin > div > div > ul > li:nth-child(3) > div");
+  if(userP){
+    userP.style.width="unset";
+  }
 
   if (ulist) {
     ulist.classList.add("ti-link");
