@@ -30,18 +30,13 @@ if (document.body.offsetWidth > 768) {
   const ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
 
   const logoutBtn = document.querySelector("#ctl00_lnkSignOut");
-  const logoutBtnS = document.querySelector("#ctl00_lnkSignOut1");
 
   if (logoutBtn) {
     logoutBtn.onclick = function () {
       Android.logOut();
     };
   }
-  if (logoutBtnS) {
-    logoutBtnS.onclick = function () {
-      Android.logOut();
-    };
-  }
+ 
   
   const userP = document.querySelector("#aspnetForm > header > div.middle-header.dark_skin > div > div > ul > li:nth-child(3) > div");
   if(userP){
