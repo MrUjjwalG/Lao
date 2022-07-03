@@ -30,9 +30,15 @@ if (document.body.offsetWidth > 768) {
   const ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
 
   const logoutBtn = document.querySelector("#ctl00_lnkSignOut");
-
   if (logoutBtn) {
     logoutBtn.onclick = function () {
+      Android.logOut();
+    };
+  }
+  
+  const logoutBtn1 = document.querySelector("#ctl00_lnkSignOut1");
+  if (logoutBtn1) {
+    logoutBtn1.onclick = function () {
       Android.logOut();
     };
   }
