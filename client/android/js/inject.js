@@ -81,7 +81,7 @@ if (document.body.offsetWidth > 768) {
     window.location.href === "https://www.laoapp.in/" ||
     window.location.href === "https://www.laoapp.in/Default.aspx"
   ) {
-    document
+   document
       .querySelector("div.prod.row")
       .appendChild(document.querySelectorAll("div.col-md-6")[5]);
     const blist = document.querySelectorAll(".background_bg.carousel-item");
@@ -105,9 +105,10 @@ if (document.body.offsetWidth > 768) {
         "background-image",
         getComputedStyle(blist[i])["background-image"]
       );
-      before.style.setProperty("filter", "blur(2px)");
+      before.style.setProperty("filter", "blur(3px)");
       before.style.setProperty("width", "100%");
-      before.style.setProperty("background-size", "100%");
+      before.style.setProperty("background-size", "cover");
+      before.style.setProperty("background-repeat", "no-repeat");
       before.style.setProperty("height", "100%");
 
       blist[i].style.setProperty("height", "125px");
