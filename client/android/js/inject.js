@@ -81,9 +81,6 @@ if (document.body.offsetWidth > 768) {
     window.location.href === "https://www.laoapp.in/" ||
     window.location.href === "https://www.laoapp.in/Default.aspx"
   ) {
-   document
-      .querySelector("div.prod.row")
-      .appendChild(document.querySelectorAll("div.col-md-6")[6]);
     const blist = document.querySelectorAll(".background_bg.carousel-item");
     for (let i = 0; i < blist.length; i++) {
       var after = document.createElement("div");
