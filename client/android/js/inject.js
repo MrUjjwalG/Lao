@@ -1,5 +1,6 @@
 if (window.location.href === "https://www.laoapp.in/Default.aspx?aspxerrorpath=/Default.aspx") {
         Android.logOut();
+        window.location.href = 'https://www.laoapp.in/';
     }
 if (document.body.offsetWidth > 768) {
     var Str =
