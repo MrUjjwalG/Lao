@@ -5,6 +5,11 @@ if (document.body.offsetWidth > 768) {
     newHTML.write(Str);
     newHTML.close();
 } else {
+     if (document.body.offsetWidth < 385) {
+        document.querySelector('body').style.zoom="80%";
+    }else if (document.body.offsetWidth < 310) {
+        document.querySelector('body').style.zoom="70%";
+    }
     var notification = JSON.stringify({
         id: 2,
         startDate: "2022-06-24T01:00:00Z",
