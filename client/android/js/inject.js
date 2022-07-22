@@ -90,6 +90,8 @@ if (document.body.offsetWidth > 768) {
         }
     } else if (window.location.href.includes("https://www.laoapp.in/ResetPassword.aspx")) {
         document.querySelector("#ctl00_ContentPlaceHolder1_lnkOtpVerify").classList.remove("btn-fill-out");
+    }else if (window.location.href.includes("https://www.laoapp.in/custRegistration.aspx")) {
+        document.querySelector("#ctl00_ContentPlaceHolder1_lnkRegisterBtn").style.color="#fff";
     }
     if (
         window.location.href === "https://www.laoapp.in/" ||
