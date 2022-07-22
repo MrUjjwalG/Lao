@@ -11714,6 +11714,8 @@ body.switch-open {
     }
 
         .header_wrap .navbar-collapse.mobile_side_menu.show {
+            background-color: #fff;
+            box-shadow: 0 5px 10px rgba(0,0,0,.1);
             left: 0
         }
 
@@ -11744,7 +11746,6 @@ body.switch-open {
 
     .navbar .navbar-collapse .navbar-nav:not([class*=bg_]):not([class*=bg-]) {
         background-color: #fff;
-        box-shadow: 0 5px 10px rgba(0,0,0,.1);
         padding-bottom: 5em;
     }
 
