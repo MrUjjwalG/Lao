@@ -284,7 +284,7 @@ button:focus {
 .btn-fill-out {
     background-color: transparent;
     border: 1px solid #e40000;
-    color: #fff !important;
+    color: #fff;
     position: relative;
     overflow: hidden;
     z-index: 1
