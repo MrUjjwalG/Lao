@@ -1,7 +1,3 @@
-if (window.location.href === "https://www.laoapp.in/Default.aspx?aspxerrorpath=/Default.aspx") {
-        Android.logOut();
-        window.location.href = 'https://www.laoapp.in/';
-    }
 if (document.body.offsetWidth > 768) {
     var Str =
         '<!DOCTYPE html> <html> <head> <title>Check if an element is a div in JavaScript.</title> </head> <body style="text-align: center; background-color: black"> <div style="overflow: hidden; display: flex; justify-content: center"> <h2 style="color: red; float: left">LAO </h2> <h2 style="color: white; float: left">APP</h2> </div> <p style="color: white">Your device does not support LAO APP</p> </body> </html>';
@@ -177,5 +173,8 @@ if (document.body.offsetWidth > 768) {
             imgsc[i].style.setProperty("width", "50%", "important");
             imgsc[i].style.setProperty("padding", "25px", "important");
         }
+    }
+    else if (window.location.href === "https://www.laoapp.in/Default.aspx?aspxerrorpath=/Default.aspx") {
+        Android.logOut();
     }
 }
