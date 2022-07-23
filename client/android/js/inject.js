@@ -230,4 +230,7 @@ if (document.body.offsetWidth > 768) {
   ) {
     Android.logOut();
   }
+  
+  $("a[data-target='#sharemyModal']").attr("data-toggle" , '').attr("data-target" , '').click(function() {Android.Share("https://play.google.com/store/apps/details?id=com.laoproject.laoapp&referrer=r%3D"+document.querySelector("#navbarSidetoggle > ul > li.share > a > span").innerHTML)});
+  $("div[data-target='#sharemyModal']").attr("data-toggle" , '').attr("data-target" , '').click(function() {Android.Share("https://play.google.com/store/apps/details?id=com.laoproject.laoapp&referrer=r%3D"+document.querySelector("#navbarSidetoggle > ul > li.share > a > span").innerHTML)});
 }
