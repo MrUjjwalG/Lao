@@ -1,3 +1,14 @@
+if (navigator.share) {
+    navigator.share({
+        title: 'Web Share API Draft',
+        text: 'Take a look at this spec!',
+        url: 'https://wicg.github.io/web-share/#share-method',
+      })
+      .then(() => console.log('Successful share'))
+      .catch((error) => console.log('Error sharing', error));
+  } else {
+    alert('Share not supported on this browser, do it the old way.');
+  }
 if (document.body.offsetWidth > 768) {
   var Str =
     '<!DOCTYPE html> <html> <head> <title>Check if an element is a div in JavaScript.</title> </head> <body style="text-align: center; background-color: black"> <div style="overflow: hidden; display: flex; justify-content: center"> <h2 style="color: red; float: left">LAO </h2> <h2 style="color: white; float: left">APP</h2> </div> <p style="color: white">Your device does not support LAO APP</p> </body> </html>';
