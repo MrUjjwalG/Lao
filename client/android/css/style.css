@@ -10,6 +10,7 @@
   body {
      zoom: 70%;
   }
+  
 }
 
 @media (max-width:767px) {
@@ -17,6 +18,9 @@
         margin-top: 0px !important
     }
     .col-xs-6{width:50%!important}
+  #ctl00_ContentPlaceHolder1_lnkSerch {
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width:991px) {
