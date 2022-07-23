@@ -91,6 +91,7 @@ if (document.body.offsetWidth > 768) {
         document.querySelector("div.login_footer.form-group").onclick = function () {
             if (document.getElementById("ctl00_ContentPlaceHolder1_txtUserName").value !== "") {
                 Android.Show_loading();
+                Android.Start_Sms();
             }
         }
     } else if (window.location.href.includes("https://www.laoapp.in/ResetPassword.aspx")) {
