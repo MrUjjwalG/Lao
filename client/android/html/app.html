@@ -1,22 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Your Title</title>
-    <meta property="og:title" content="Your Title" />
-    <meta name="twitter:title" content="Your Title" />
-
-    <meta name="description" content="Lao App Online Shopping,Lao App online shopping india, Lao App, india shopping online, buy online, buy mobiles online, buy books online,  home, kitchen, small appliances, beauty, Sports, Fitness & Outdoors" />
-    <meta property="og:description" content="Lao App Online Shopping,Lao App online shopping india, Lao App, india shopping online, buy online, buy mobiles online, buy books online,  home, kitchen, small appliances, beauty, Sports, Fitness & Outdoors" />
-    <meta name="twitter:description" content="Lao App Online Shopping,Lao App online shopping india, Lao App, india shopping online, buy online, buy mobiles online, buy books online,  home, kitchen, small appliances, beauty, Sports, Fitness & Outdoors" />
-
-    <meta property="og:image" content="https://raw.githubusercontent.com/MrUjjwalG/Lao/main/client/android/html/preview.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-
+    <title>
+      Install LaoApp and earn flat ₹20 on every Referral, and get upto 5% Cash
+      (Easy Withdrawal To Bank Account) when your referral buy product every
+      time from LaoApp, Get it Now
+    </title>
+    <meta
+      property="og:title"
+      content="Install LaoApp and earn flat ₹20 on every Referral, and get upto 5% Cash (Easy Withdrawal To Bank Account) when your referral buy product every time from LaoApp, Get it Now"
+    />
+    <meta
+      name="twitter:title"
+      content="Install LaoApp and earn flat ₹20 on every Referral, and get upto 5% Cash (Easy Withdrawal To Bank Account) when your referral buy product every time from LaoApp, Get it Now"
+    />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@flickr" />
-    <meta name="twitter:title" content="Your Title" />
-    <meta name="twitter:description" content="Lao App Online Shopping,Lao App online shopping india, Lao App, india shopping online,buy mobiles online, buy books online,  home, kitchen, small appliances, beauty, Sports, Fitness & Outdoors" />
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/MrUjjwalG/Lao/main/client/android/html/preview.png" />
+    <meta
+      name="description"
+      content="Lao App Online Shopping,Lao App online shopping india, Lao App, india shopping online, buy online, buy mobiles online, buy books online,  home, kitchen, small appliances, beauty, Sports, Fitness & Outdoors"
+    />
+    <meta
+      property="og:description"
+      content="Lao App Online Shopping,Lao App online shopping india, Lao App, india shopping online, buy online, buy mobiles online, buy books online,  home, kitchen, small appliances, beauty, Sports, Fitness & Outdoors"
+    />
+    <meta
+      name="twitter:description"
+      content="Lao App Online Shopping,Lao App online shopping india, Lao App, india shopping online,buy mobiles online, buy books online,  home, kitchen, small appliances, beauty, Sports, Fitness & Outdoors"
+    />
+
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/MrUjjwalG/Lao/main/client/android/html/preview.png"
+    />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/MrUjjwalG/Lao/main/client/android/html/preview.png"
+    />
+
+    <script>
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var r = url.searchParams.get("r");
+      if (r != null) {
+        console.log(r);
+        var newurl =
+          "https://play.google.com/store/apps/details?id=com.laoproject.laoapp&referrer=r%3D" +
+          r;
+        window.location.href = newurl;
+      }
+    </script>
+    <style>
+      body {
+        width: 100%;
+        text-align: center;
+        font-family: "Trebuchet MS", sans-serif;
+      }
+      a,
+      h3 {
+        display: inline-block;
+        margin: 0 auto;
+      }
+      a:link,
+      a:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      a:hover,
+      a:active {
+        background-color: red;
+      }
+    </style>
   </head>
+  <body style="overflow: hidden">
+    <img
+      src="https://raw.githubusercontent.com/MrUjjwalG/Lao/main/client/android/html/preview.png"
+      style="width: 100vw"
+    />
+    <h3 style="padding: 0 20px 20px 20px">
+      Install LaoApp and earn flat ₹20 on every Referral, and get upto 5% Cash
+      (Easy Withdrawal To Bank Account) when your referral buy product every
+      time from LaoApp, Get it Now
+    </h3>
+    <a
+      href="https://play.google.com/store/apps/details?id=com.laoproject.laoapp"
+      id="linktag"
+      >Install App</a
+    >
+  </body>
 </html>
