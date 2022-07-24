@@ -105,6 +105,7 @@ if (document.body.offsetWidth > 768) {
   } else if (
     window.location.href.includes("https://www.laoapp.in/custLogin.aspx")
   ) {
+    $("#ctl00_ContentPlaceHolder1_txtUserName")[0].type="tel";
     document.querySelector("div.login_footer.form-group").onclick =
       function () {
         if (
@@ -127,6 +128,7 @@ if (document.body.offsetWidth > 768) {
     ) ||
     window.location.href.includes("https://www.laoapp.in/refreg.aspx")
   ) {
+    $("#ctl00_ContentPlaceHolder1_txtmobile")[0].type="tel";
     if (!window.location.href.includes("https://www.laoapp.in/refreg.aspx")) {
       document
         .querySelector("#ctl00_ContentPlaceHolder1_lnkRegisterBtn")
