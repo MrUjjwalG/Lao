@@ -5401,9 +5401,11 @@ footer .widget_title {
 }
 
     .login_footer a {
-        color: #687188
+        color: #e40000
     }
-
+#ctl00_ContentPlaceHolder1_txtemail{
+  display: none;
+}
 .different_login {
     text-align: center;
     position: relative;
