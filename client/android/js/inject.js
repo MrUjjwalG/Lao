@@ -22,7 +22,7 @@ if (document.body.offsetWidth > 768) {
     if (var1) {
         var1.style.background = "#000";
     }
-    let var2 = $("div[style='padding: 5px 3px;']");
+    let var2 = $("div[style='padding: 5px 3px;']")[0];
     if (var2) {
         var2.style.overflow = "hidden";
     }
