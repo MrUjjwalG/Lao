@@ -17,16 +17,14 @@ if (document.body.offsetWidth > 768) {
         message: "Shop your desires from 5th of July 2022",
     });
     Android.addNotification(notification);
-    try {
-        document.querySelector(
+
+        $(
             "li[style='background: #0953cc; height: 60px; padding-right:10px']"
-        ).style.background = "#000";
+        )[0].style.background = "#000";
         document.querySelector("div[style='padding: 5px 3px;']").style.overflow =
             "hidden";
-        document
-            .querySelector(".cat_slider1")
+        $(".cat_slider1")[0]
             .style.setProperty("margin-top", "10px", "important");
-    } catch { }
     const ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
 
     const logoutBtn = document.querySelector("#ctl00_lnkSignOut");
