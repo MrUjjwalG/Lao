@@ -268,4 +268,4 @@ if (document.body.offsetWidth > 768) {
             .innerHTML
       );
     });
-}
+}}
