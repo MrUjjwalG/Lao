@@ -18,15 +18,20 @@ if (document.body.offsetWidth > 768) {
     });
     Android.addNotification(notification);
 
-        $(
-            "li[style='background: #0953cc; height: 60px; padding-right:10px']"
-        )[0].style.background = "#000";
-        document.querySelector("div[style='padding: 5px 3px;']").style.overflow =
-            "hidden";
-        $(".cat_slider1")[0]
-            .style.setProperty("margin-top", "10px", "important");
-    const ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
+    let var1 = $("li[style='background: #0953cc; height: 60px; padding-right:10px']")[0];
+    if (var1) {
+        var1.style.background = "#000";
+    }
+    let var2 = $("div[style='padding: 5px 3px;']");
+    if (var2) {
+        var2.style.overflow = "hidden";
+    }
+    let var3 = $(".cat_slider1")[0];
+    if (var3) {
+        var3.style.setProperty("margin-top", "10px", "important");
+    }
 
+    const ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
     const logoutBtn = document.querySelector("#ctl00_lnkSignOut");
     if (logoutBtn) {
         logoutBtn.onclick = function () {
