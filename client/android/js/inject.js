@@ -5,11 +5,6 @@ if (document.body.offsetWidth > 768) {
   newHTML.write(Str);
   newHTML.close();
 } else {
-  if (document.body.offsetWidth < 385) {
-    document.querySelector("body").style.zoom = "80%";
-  } else if (document.body.offsetWidth < 310) {
-    document.querySelector("body").style.zoom = "70%";
-  }
   var notification = JSON.stringify({
     id: 2,
     startDate: "2022-06-24T01:00:00Z",
@@ -102,10 +97,8 @@ if (document.body.offsetWidth > 768) {
     ).onclick = function () {
       Android.Add_new_address();
     };
-  } else if (
-    window.location.href.includes("https://www.laoapp.in/custLogin.aspx")
-  ) {
-    $("#ctl00_ContentPlaceHolder1_txtUserName")[0].type="tel";
+  } else if (window.location.href.includes("custLogin.aspx")) {
+    $("#ctl00_ContentPlaceHolder1_txtUserName")[0].type = "tel";
     document.querySelector("div.login_footer.form-group").onclick =
       function () {
         if (
@@ -116,9 +109,7 @@ if (document.body.offsetWidth > 768) {
           Android.Start_Sms();
         }
       };
-  } else if (
-    window.location.href.includes("https://www.laoapp.in/ResetPassword.aspx")
-  ) {
+  } else if (window.location.href.includes("ResetPassword.aspx")) {
     document
       .querySelector("#ctl00_ContentPlaceHolder1_lnkOtpVerify")
       .classList.remove("btn-fill-out");
@@ -126,10 +117,10 @@ if (document.body.offsetWidth > 768) {
     window.location.href.includes(
       "https://www.laoapp.in/custRegistration.aspx"
     ) ||
-    window.location.href.includes("https://www.laoapp.in/refreg.aspx")
+    window.location.href.includes("refreg.aspx")
   ) {
-    $("#ctl00_ContentPlaceHolder1_txtmobile")[0].type="tel";
-    if (!window.location.href.includes("https://www.laoapp.in/refreg.aspx")) {
+    $("#ctl00_ContentPlaceHolder1_txtmobile")[0].type = "tel";
+    if (!window.location.href.includes("refreg.aspx")) {
       document
         .querySelector("#ctl00_ContentPlaceHolder1_lnkRegisterBtn")
         .style.setProperty("color", "#fff");
@@ -143,7 +134,31 @@ if (document.body.offsetWidth > 768) {
         Android.Start_Sms();
       }
     };
+  } else if (window.location.href.includes("locationsN.aspx")) {
+    if (document.querySelector("#ctl00_ContentPlaceHolder1_ddlState")) {
+      Android.GetLocation();
+    }
+  } else if (window.location.href.includes("InvoiceInState.aspx")) {
+    document.querySelector("body").onfocus = function () {
+      if (document.body.offsetWidth < 385) {
+        document.querySelector("body").style.zoom = "50%";
+      } else if (document.body.offsetWidth < 310) {
+        document.querySelector("body").style.zoom = "40%";
+      }
+    };
+    Android.Set_bill(document.querySelector("#OrdrNum").innerHTML);
+    document.querySelector(
+      "#no-print > div > input.btn.btn-primary.btn-sm"
+    ).onclick = function () {
+      Android.Print();
+    };
+    document.querySelector(
+      "#no-print > div > input.btn.btn-danger.btn-sm"
+    ).onclick = function () {
+      history.back();
+    };
   }
+
   if (
     window.location.href === "https://www.laoapp.in/" ||
     window.location.href === "https://www.laoapp.in/Default.aspx"
@@ -232,7 +247,25 @@ if (document.body.offsetWidth > 768) {
   ) {
     Android.logOut();
   }
-  
-  $("a[data-target='#sharemyModal']").attr("data-toggle" , '').attr("data-target" , '').click(function() {Android.Share("https://play.google.com/store/apps/details?id=com.laoproject.laoapp&referrer=r%3D"+document.querySelector("#navbarSidetoggle > ul > li.share > a > span").innerHTML)});
-  $("div[data-target='#sharemyModal']").attr("data-toggle" , '').attr("data-target" , '').click(function() {Android.Share("https://play.google.com/store/apps/details?id=com.laoproject.laoapp&referrer=r%3D"+document.querySelector("#navbarSidetoggle > ul > li.share > a > span").innerHTML)});
+
+  $("a[data-target='#sharemyModal']")
+    .attr("data-toggle", "")
+    .attr("data-target", "")
+    .click(function () {
+      Android.Share(
+        "https://play.google.com/store/apps/details?id=com.laoproject.laoapp&referrer=r%3D" +
+          document.querySelector("#navbarSidetoggle > ul > li.share > a > span")
+            .innerHTML
+      );
+    });
+  $("div[data-target='#sharemyModal']")
+    .attr("data-toggle", "")
+    .attr("data-target", "")
+    .click(function () {
+      Android.Share(
+        "https://play.google.com/store/apps/details?id=com.laoproject.laoapp&referrer=r%3D" +
+          document.querySelector("#navbarSidetoggle > ul > li.share > a > span")
+            .innerHTML
+      );
+    });
 }
