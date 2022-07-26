@@ -73,6 +73,7 @@ if (document.body.offsetWidth > 768) {
         var url = new URL(window.location.href);
         var id = url.searchParams.get("id");
         document.querySelector("input#ctl00_TextBox1").value = id;
+        document.querySelector("div.main_content > div > div > div").style.setProperty("margin-left", "", "important");
     } else if (window.location.href.includes("my_account.aspx")) {
         document
             .querySelector("div.col-md-2.offset-10")
