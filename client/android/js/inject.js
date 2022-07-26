@@ -1,4 +1,3 @@
-"use strict";
 if (document.body.offsetWidth > 768) {
     var Str =
         '<!DOCTYPE html> <html> <head> <title>Check if an element is a div in JavaScript.</title> </head> <body style="text-align: center; background-color: black"> <div style="overflow: hidden; display: flex; justify-content: center"> <h2 style="color: red; float: left">LAO </h2> <h2 style="color: white; float: left">APP</h2> </div> <p style="color: white">Your device does not support LAO APP</p> </body> </html>';
@@ -19,35 +18,35 @@ if (document.body.offsetWidth > 768) {
     });
     Android.addNotification(notification);
 
-    let var1 = $("li[style='background: #0953cc; height: 60px; padding-right:10px']")[0];
+    var var1 = $("li[style='background: #0953cc; height: 60px; padding-right:10px']")[0];
     if (var1) {
         var1.style.background = "#000";
     }
-    let var2 = $("div[style='padding: 5px 3px;']")[0];
+    var var2 = $("div[style='padding: 5px 3px;']")[0];
     if (var2) {
         var2.style.overflow = "hidden";
     }
-    let var3 = $(".cat_slider1")[0];
+    var var3 = $(".cat_slider1")[0];
     if (var3) {
         var3.style.setProperty("margin-top", "10px", "important");
     }
 
-    const ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
-    const logoutBtn = document.querySelector("#ctl00_lnkSignOut");
+    var ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
+    var logoutBtn = document.querySelector("#ctl00_lnkSignOut");
     if (logoutBtn) {
         logoutBtn.onclick = function () {
             Android.logOut();
         };
     }
 
-    const logoutBtn1 = document.querySelector("#ctl00_lnkSignOut1");
+    var logoutBtn1 = document.querySelector("#ctl00_lnkSignOut1");
     if (logoutBtn1) {
         logoutBtn1.onclick = function () {
             Android.logOut();
         };
     }
 
-    const userP = document.querySelector(
+    var userP = document.querySelector(
         "#aspnetForm > header > div.middle-header.dark_skin > div > div > ul > li:nth-child(3) > div"
     );
     if (userP) {
@@ -58,12 +57,12 @@ if (document.body.offsetWidth > 768) {
         ulist.classList.add("ti-link");
         ulist.classList.remove("ti-shopping-cart-full");
     }
-    const clist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[7];
+    var clist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[7];
     if (clist) {
         clist.classList.add("ti-user");
         clist.classList.remove("ti-shopping-cart-full");
     }
-    const llist = document.querySelector(
+    var llist = document.querySelector(
         ".nav_item i.iconf.ti-shopping-cart-full"
     );
     if (llist) {
@@ -167,8 +166,8 @@ if (document.body.offsetWidth > 768) {
         window.location.href === "https://www.laoapp.in/" ||
         window.location.href === "https://www.laoapp.in/Default.aspx"
     ) {
-        const blist = document.querySelectorAll(".background_bg.carousel-item");
-        for (let i = 0; i < blist.length; i++) {
+        var blist = document.querySelectorAll(".background_bg.carousel-item");
+        for (var i = 0; i < blist.length; i++) {
             var after = document.createElement("div");
             after.style.setProperty(
                 "background-image",
@@ -200,13 +199,13 @@ if (document.body.offsetWidth > 768) {
             blist[i].appendChild(before);
             blist[i].appendChild(after);
         }
-        const alist = document.querySelectorAll("div.items.png");
-        for (let i = 0; i < alist.length; i++) {
+        var alist = document.querySelectorAll("div.items.png");
+        for (var i = 0; i < alist.length; i++) {
             alist[i].style.setProperty("height", "auto", "important");
-            let child = alist[i].querySelectorAll("a");
+            var child = alist[i].querySelectorAll("a");
             if (child.length % 2 != 0) {
                 alist[i].style.setProperty("overflow-x", "scroll", "important");
-                for (let c = 0; c < child.length; c++) {
+                for (var c = 0; c < child.length; c++) {
                     child[c].parentNode.style.setProperty(
                         "flex-wrap",
                         "unset",
@@ -233,15 +232,15 @@ if (document.body.offsetWidth > 768) {
     ) {
         var uls = document.querySelectorAll("ul");
         var lis = document.querySelectorAll("li");
-        for (let i = 0; i < uls.length; i++) {
+        for (var i = 0; i < uls.length; i++) {
             uls[i].style.setProperty("margin-left", "unset", "important");
         }
-        for (let i = 0; i < lis.length; i++) {
+        for (var i = 0; i < lis.length; i++) {
             lis[i].style.setProperty("margin-left", "unset", "important");
         }
     } else if (window.location.href === "https://www.laoapp.in/my_account.aspx") {
         var imgsc = document.querySelectorAll(".card-body .text-center");
-        for (let i = 0; i < imgsc.length; i++) {
+        for (var i = 0; i < imgsc.length; i++) {
             imgsc[i].style.setProperty("width", "50%", "important");
             imgsc[i].style.setProperty("padding", "25px", "important");
         }
