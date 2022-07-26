@@ -1,7 +1,7 @@
 /* On screens that are 992px wide or less, the background color is blue */
 @media only screen and (min-width: 310px) and (max-width: 410px) {
   body {
-    zoom: 80%;
+    zoom: 90%;
   }
 }
 
