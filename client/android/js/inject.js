@@ -30,6 +30,11 @@ if (document.body.offsetWidth > 768) {
     if (var3) {
         var3.style.setProperty("margin-top", "10px", "important");
     }
+    
+    var searchBox = $("#ctl00_TextBox1")[0];
+    if(searchBox){
+        searchBox.type="search";
+    }
 
     var ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
     var logoutBtn = document.querySelector("#ctl00_lnkSignOut");
