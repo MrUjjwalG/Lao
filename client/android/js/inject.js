@@ -34,9 +34,9 @@ if (document.body.offsetWidth > 768) {
     var searchBox = $("#ctl00_TextBox1")[0];
     if (searchBox) {
         searchBox.type = "search";
-        searchBox.on("keydown", "form", function (event) {
+        document.querySelector("#aspnetForm").on("keypress", "form", function (event) {
             if (event.key == "Enter") {
-                searchBox.blur();
+                document.activeElement.blur();
             }
         });
     }
