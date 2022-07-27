@@ -8229,9 +8229,7 @@ blockquote {
 }
 
 .modal {
-    padding-right: 0 !important;
-    width: 100vw;
-    height: 100vh;
+    padding-right: 0 !important
 }
 
 .page_soon {
