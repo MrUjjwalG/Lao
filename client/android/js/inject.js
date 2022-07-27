@@ -36,9 +36,7 @@ if (document.body.offsetWidth > 768) {
         searchBox.type = "search";
         searchBox.on("keydown", "form", function (event) {
             if (event.key == "Enter") {
-                if (document.activeElement instanceof HTMLElement) {
-                    document.activeElement.blur();
-                }
+                searchBox.blur();
             }
         });
     }
