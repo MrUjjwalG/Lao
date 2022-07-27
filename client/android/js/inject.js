@@ -1,4 +1,4 @@
-if (window.location.includes("aspxerrorpath")) {
+if (window.location.href.includes("aspxerrorpath")) {
     Android.logOut();
     window.location.href = "https://www.laoapp.in/";
 }
