@@ -1,5 +1,6 @@
 if (window.location.includes("aspxerrorpath")){
     Android.logOut();
+    window.location.href="https://www.laoapp.in/";
 }
 
 if (document.body.offsetWidth > 768) {
