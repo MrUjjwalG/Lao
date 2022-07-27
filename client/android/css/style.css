@@ -2929,7 +2929,9 @@ input.text {
 }
 
 .modal-body .form-control:focus {
-    height: 34px
+    height: 34px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .categories_btn {
