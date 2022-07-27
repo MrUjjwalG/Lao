@@ -34,6 +34,11 @@ if (document.body.offsetWidth > 768) {
     var searchBox = $("#ctl00_TextBox1")[0];
     if(searchBox){
         searchBox.type="search";
+        searchBox.on("keydown", "form", function(event) { 
+        if(event.key == "Enter"){
+           if (document.activeElement instanceof HTMLElement){
+                document.activeElement.blur();
+           }}});
     }
 
     var ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
