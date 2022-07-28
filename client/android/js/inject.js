@@ -270,7 +270,7 @@ if (document.body.offsetWidth > 768) {
         .attr("data-target", "")
         .click(function () {
             Android.Share(
-                "https://lao.vercel.app/ref?s=" +
+                "https://lao.vercel.app/ref?referrer=" +
                 document.querySelector("#navbarSidetoggle > ul > li.share > a > span")
                     .innerHTML
             );
@@ -280,7 +280,7 @@ if (document.body.offsetWidth > 768) {
         .attr("data-target", "")
         .click(function () {
             Android.Share(
-                "https://lao.vercel.app/ref?s=" +
+                "https://lao.vercel.app/ref?referrer=" +
                 document.querySelector("#navbarSidetoggle > ul > li.share > a > span")
                     .innerHTML
             );
