@@ -39,6 +39,9 @@ if (document.body.offsetWidth > 768) {
     var searchBox = $("#ctl00_TextBox1")[0];
     if (searchBox) {
         searchBox.type = "search";
+        searchBox.change(function () {
+        $(this).trigger('blur');
+    });
     }
 
     var ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
