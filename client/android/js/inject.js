@@ -40,8 +40,8 @@ if (document.body.offsetWidth > 768) {
     if (searchBox) {
         searchBox.type = "search";
         searchBox.change(function () {
-        $(this).trigger('blur');
-    });
+            $(this).trigger('blur');
+        });
     }
 
     var ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
