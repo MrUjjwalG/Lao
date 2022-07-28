@@ -112,6 +112,10 @@
     display: none !important
 }
 
+#ctl00_TextBox1::-webkit-search-cancel-button{
+    display:none
+}
+
 body, html {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
