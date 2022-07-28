@@ -39,7 +39,7 @@ if (document.body.offsetWidth > 768) {
     var searchBox = $("#ctl00_TextBox1")[0];
     if (searchBox) {
         searchBox.type = "search";
-        searchBox.change(function () {
+        $('#ctl00_TextBox1').change(function () {
             $(this).trigger('blur');
         });
     }
