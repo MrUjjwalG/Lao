@@ -270,7 +270,7 @@ if (document.body.offsetWidth > 768) {
         .attr("data-target", "")
         .click(function () {
             Android.Share(
-                "https://play.google.com/store/apps/details?id=com.laoproject.laoapp&referrer=r%3D" +
+                "https://lao.vercel.app/ref?r=" +
                 document.querySelector("#navbarSidetoggle > ul > li.share > a > span")
                     .innerHTML
             );
@@ -280,7 +280,7 @@ if (document.body.offsetWidth > 768) {
         .attr("data-target", "")
         .click(function () {
             Android.Share(
-                "https://play.google.com/store/apps/details?id=com.laoproject.laoapp&referrer=r%3D" +
+                "https://lao.vercel.app/ref?r=" +
                 document.querySelector("#navbarSidetoggle > ul > li.share > a > span")
                     .innerHTML
             );
