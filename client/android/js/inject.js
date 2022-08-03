@@ -145,12 +145,16 @@ if (document.body.offsetWidth > 768) {
       .querySelector("#ctl00_ContentPlaceHolder1_lnkOtpVerify")
       .classList.remove("btn-fill-out");
   } else if (
-    window.location.href.includes(
-      "https://www.laoapp.in/custRegistration.aspx"
-    ) ||
+    window.location.href.includes("custRegistration.aspx") ||
     window.location.href.includes("refreg.aspx")
   ) {
-    $("#ctl00_ContentPlaceHolder1_txtmobile")[0].type = "tel";
+    var numbox = $("#ctl00_ContentPlaceHolder1_txtmobile")[0];
+    numbox.type = "tel";
+    numbox.onclick = function () {
+      if (numbox.value == "") {
+        Android.getPhnHint();
+      }
+    };
     if (!window.location.href.includes("refreg.aspx")) {
       document
         .querySelector("#ctl00_ContentPlaceHolder1_lnkRegisterBtn")
