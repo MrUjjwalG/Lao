@@ -43,9 +43,9 @@ if (document.body.offsetWidth > 768) {
             $(this).trigger('blur');
         });
     }
-    
-   var oprevbtn = document.querySelector("button.owl-prev");
-    
+
+    var oprevbtn = document.querySelector("button.owl-prev");
+
     if (oprevbtn) {
         oprevbtn.click();
     }
@@ -123,7 +123,7 @@ if (document.body.offsetWidth > 768) {
     } else if (window.location.href.includes("custLogin.aspx")) {
         var numbox = document.querySelector("#ctl00_ContentPlaceHolder1_txtUserName");
         numbox.type = "tel";
-        numbox.onclick= function(){if(numbox.value==""){Android.getPhnHint();}}
+        numbox.onclick = function () { if (numbox.value == "") { Android.getPhnHint(); } }
         document.querySelector("div.login_footer.form-group").onclick =
             function () {
                 if (
@@ -182,12 +182,12 @@ if (document.body.offsetWidth > 768) {
         ).onclick = function () {
             history.back();
         };
-    }else if (window.location.href.includes("ItemDetail.aspx")) {
-        if(document.querySelectorAll("#ctl00_ContentPlaceHolder1_DropDownList2 > option").length==1){
-             if(document.querySelectorAll("#ctl00_ContentPlaceHolder1_DropDownList2 > option")[0].innerHTML.includes("Natural")){
-             document.querySelector("#ctl00_ContentPlaceHolder1_UpdatePanel2 > div > div.col-lg-8.col-sm-12 > div > div > div:nth-child(7)").style.display="none";
-             }
-         }
+    } else if (window.location.href.includes("ItemDetail.aspx")) {
+        if (document.querySelectorAll("#ctl00_ContentPlaceHolder1_DropDownList2 > option").length == 1) {
+            if (document.querySelectorAll("#ctl00_ContentPlaceHolder1_DropDownList2 > option")[0].innerHTML.includes("Natural")) {
+                document.querySelector("#ctl00_ContentPlaceHolder1_UpdatePanel2 > div > div.col-lg-8.col-sm-12 > div > div > div:nth-child(7)").style.display = "none";
+            }
+        }
     }
 
     if (
