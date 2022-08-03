@@ -121,7 +121,9 @@ if (document.body.offsetWidth > 768) {
             Android.Add_new_address();
         };
     } else if (window.location.href.includes("custLogin.aspx")) {
-        $("#ctl00_ContentPlaceHolder1_txtUserName")[0].type = "tel";
+        var numbox = document.querySelector("#ctl00_ContentPlaceHolder1_txtUserName");
+        numbox.type = "tel";
+        numbox.onclick= function(){if(numbox.value==""){Android.getPhnHint();}}
         document.querySelector("div.login_footer.form-group").onclick =
             function () {
                 if (
