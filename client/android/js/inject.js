@@ -88,7 +88,7 @@ if (document.body.offsetWidth > 768) {
     llist.classList.add("ti-new-window");
     llist.classList.remove("ti-shopping-cart-full");
   }
-  if (window.location.href.includes("rslt.aspx?id")) {
+  if (window.location.href.includes("rsltNew.aspx?id")) {
     var url = new URL(window.location.href);
     var id = url.searchParams.get("id");
     document.querySelector("input#ctl00_TextBox1").value = id;
@@ -214,7 +214,7 @@ if (document.body.offsetWidth > 768) {
 
   if (
     window.location.href === "https://www.laoapp.in/" ||
-    window.location.href === "https://www.laoapp.in/Default.aspx"
+    window.location.href.includes("https://www.laoapp.in/Default.aspx")
   ) {
     var blist = document.querySelectorAll(".background_bg.carousel-item");
     for (var i = 0; i < blist.length; i++) {
