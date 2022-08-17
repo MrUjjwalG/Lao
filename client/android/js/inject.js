@@ -210,6 +210,10 @@ if (document.body.offsetWidth > 768) {
         ).style.display = "none";
       }
     }
+  } else if (window.location.href.includes("ItemDetail.aspx")) {
+    document
+      .querySelector("#ctl00_ContentPlaceHolder1_UpdatePanel1 > div")
+      .style.setProperty("margin", "0 -15px", "important");
   }
 
   if (
