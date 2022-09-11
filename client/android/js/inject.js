@@ -1,8 +1,3 @@
-if (window.location.href.includes("aspxerrorpath=")) {
-  Android.logOut();
-  window.location.href = "https://www.laoapp.in/";
-}
-
 if (document.body.offsetWidth > 768) {
   var Str =
     '<!DOCTYPE html> <html> <head> <title>Check if an element is a div in JavaScript.</title> </head> <body style="text-align: center; background-color: black"> <div style="overflow: hidden; display: flex; justify-content: center"> <h2 style="color: red; float: left">LAO </h2> <h2 style="color: white; float: left">APP</h2> </div> <p style="color: white">Your device does not support LAO APP</p> </body> </html>';
