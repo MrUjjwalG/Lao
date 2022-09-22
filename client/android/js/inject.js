@@ -41,12 +41,6 @@ if (document.body.offsetWidth > 768) {
     });
   }
 
-  var oprevbtn = document.querySelector("button.owl-prev");
-
-  if (oprevbtn) {
-    oprevbtn.click();
-  }
-
   var ulist = document.querySelectorAll("i.iconf.ti-shopping-cart-full")[8];
   var logoutBtn = document.querySelector("#ctl00_lnkSignOut");
   if (logoutBtn) {
