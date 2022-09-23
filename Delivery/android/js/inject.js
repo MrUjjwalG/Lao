@@ -8,8 +8,8 @@ if (document.querySelector("#navbarDropdownProfile > p")) {
 if (window.location.href.includes("admin/Accepted_Order") || window.location.href.includes("admin/New_Order")) {
     var uls = document.querySelectorAll("div.content > div.row > div > div > div.card-body > div > div:nth-child(4) > p > span");
 
-var uls2 = document.querySelectorAll("div.content > div.row > div > div > div.card-body > div > div:nth-child(3) > p > span");
-var uls3 = document.querySelectorAll("div.content > div.row > div > div > div.card-body > div > div:nth-child(5) > p > span");
+    var uls2 = document.querySelectorAll("div.content > div.row > div > div > div.card-body > div > div:nth-child(3) > p > span");
+    var uls3 = document.querySelectorAll("div.content > div.row > div > div > div.card-body > div > div:nth-child(5) > p > span");
     for (var i = 0; i < uls.length; i++) {
         var addr = uls[i].innerText;
         if (addr.includes("-->")) {
@@ -23,20 +23,20 @@ var uls3 = document.querySelectorAll("div.content > div.row > div > div > div.ca
     }
 
     for (var i = 0; i < uls2.length; i++) {
-            var addr = uls2[i].innerText;
-                var mySpan = document.createElement("a");
-                mySpan.href = "tel:" + addr;
-                mySpan.innerHTML = addr;
-                uls2[i].parentNode.replaceChild(mySpan, uls2[i]);
-        }
+        var addr = uls2[i].innerText;
+        var mySpan = document.createElement("a");
+        mySpan.href = "tel:" + addr;
+        mySpan.innerHTML = addr;
+        uls2[i].parentNode.replaceChild(mySpan, uls2[i]);
+    }
 
-        for (var i = 0; i < uls3.length; i++) {
-                    var addr = uls3[i].innerText;
-                        var mySpan = document.createElement("a");
-                        mySpan.href = "tel:" + addr;
-                        mySpan.innerHTML = addr;
-                        uls3[i].parentNode.replaceChild(mySpan, uls3[i]);
-                }
+    for (var i = 0; i < uls3.length; i++) {
+        var addr = uls3[i].innerText;
+        var mySpan = document.createElement("a");
+        mySpan.href = "tel:" + addr;
+        mySpan.innerHTML = addr;
+        uls3[i].parentNode.replaceChild(mySpan, uls3[i]);
+    }
 
     var state = document.querySelectorAll("div.content > div.row > div > div > div.card-footer.text-right.pull-right > div > p");
 
@@ -45,17 +45,22 @@ var uls3 = document.querySelectorAll("div.content > div.row > div > div > div.ca
         if (stat == "Waiting for pick the order......") {
             var shop = state[i].parentNode.parentNode.parentNode.querySelector("div.card-body > div > div:nth-child(2) > p > span");
             var odn = state[i].parentNode.parentNode.parentNode.querySelector(".card-header").innerText.split(": ")[1];
-            var mySpan = document.createElement("a");
-            mySpan.classList.add("btn", "btn-sm", "btn-success");
-            mySpan.innerHTML = "Pick UP";
-            mySpan.href = "javascript:alert('" + odn + "')";
-            state[i].parentNode.replaceChild(mySpan, state[i]);
+            var vlat = state[i].parentNode.parentNode.parentNode.querySelector("input[name=vlat]");
+            var vlong = state[i].parentNode.parentNode.parentNode.querySelector("input[name=vlong]");
 
-            var mySpan2 = document.createElement("a");
-            mySpan2.innerHTML = shop.innerText;
-            mySpan2.href = "https://maps.google.com/?q="+Android.getLatLong("ok");
-            shop.parentNode.replaceChild(mySpan2, shop);
-            console.log(odn, shop.innerText)
+            if (vlat && vlong) {
+            var lat_long = vlat.value + "," + vlong.value;
+                var mySpan = document.createElement("a");
+                mySpan.classList.add("btn", "btn-sm", "btn-success");
+                mySpan.innerHTML = "Pick UP";
+                mySpan.href = "javascript:Android.pickup('"+0+"=="+odn + "')";
+                state[i].parentNode.replaceChild(mySpan, state[i]);
+
+                var mySpan2 = document.createElement("a");
+                mySpan2.innerHTML = shop.innerText;
+                mySpan2.href = "https://maps.google.com/?q=" + lat_long;
+                shop.parentNode.replaceChild(mySpan2, shop);
+            }
         }
     }
 }
