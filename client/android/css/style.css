@@ -96,7 +96,9 @@
     }
 }
 
-
+.cart_btn{
+    width: 100%;
+}
 
 @media only screen and (min-width: 310px) and (max-width: 410px) {
   body {
