@@ -1,4 +1,103 @@
 /* On screens that are 992px wide or less, the background color is blue */
+.rtable {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+    .rtable caption {
+        font-size: 1.5em;
+        margin: .5em 0 .75em;
+    }
+
+    .rtable tr {
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        padding: .35em;
+    }
+
+    .rtable th,
+    .rtable td {
+        padding: .625em;
+        text-align: center;
+    }
+
+    .rtable th {
+        font-size: .85em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+
+@media screen and (max-width: 600px) {
+    .rtable {
+        border: 0;
+    }
+
+        .rtable caption {
+            font-size: 1.3em;
+        }
+
+        .rtable thead {
+            border: none;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+
+        .rtable tr {
+            border-bottom: 3px solid #ddd;
+            display: block;
+            margin-bottom: .625em;
+        }
+
+        .rtable td {
+            border-bottom: 1px solid #ddd;
+            display: block;
+            font-size: 1em;
+            text-align: right;
+        }
+
+    .jtd {
+        display: flex !important;
+        justify-content: space-between;
+    }
+
+        .jtd::before {
+            font-size: 1em !important;
+        }
+
+    .rtable td::before {
+        /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 0.8em;
+    }
+
+    .rtable td:last-child {
+        border-bottom: 0;
+        border-top: 0.1em solid black;
+    }
+
+    .rtable td:first-child {
+        border-top: 0;
+        border-bottom: 0.05em solid;
+    }
+}
+
+
+
 @media only screen and (min-width: 310px) and (max-width: 410px) {
   body {
     zoom: 90%;
@@ -6276,7 +6375,8 @@ footer .widget_title {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+    justify-content: center;
 }
 
 .zoomContainer {
