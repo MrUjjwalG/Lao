@@ -44,7 +44,7 @@ if (window.location.href.includes("admin/Accepted_Order") || window.location.hre
         var stat = state[i].innerText;
         if (stat == "Waiting for pick the order......") {
             var shop = state[i].parentNode.parentNode.parentNode.querySelector("div.card-body > div > div:nth-child(2) > p > span");
-            var odn = state[i].parentNode.parentNode.parentNode.querySelector(".card-header").innerText.split(": ")[1];
+            var odn = state[i].parentNode.parentNode.parentNode.querySelector("#hdfOrderNum > p > span").innerText;;
             var vlat = state[i].parentNode.parentNode.parentNode.querySelector("input[name=vlat]");
             var vlong = state[i].parentNode.parentNode.parentNode.querySelector("input[name=vlong]");
 
