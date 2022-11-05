@@ -7337,20 +7337,7 @@ footer .widget_title {
     padding-bottom: 20px
 }
 
-    .product_img::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top: 0;
-        background-color: rgba(0,0,0,.2);
-        opacity: 0;
-        transition: all .5s ease-in-out;
-        z-index: 1
-    }
-
-.product:hover .product_img:before, .product_box:hover .product_img:before {
+.product:hover , .product_box:hover {
     opacity: 1
 }
 
